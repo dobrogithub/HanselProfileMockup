@@ -59,7 +59,7 @@ class FriendsCollectionViewCell: UICollectionViewCell, UITableViewDataSource, UI
             withIdentifier: "FriendTableViewCell",
             for: indexPath)  as UITableViewCell
         
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         guard let friendCell = cell as? FriendTableViewCell else {
             return cell

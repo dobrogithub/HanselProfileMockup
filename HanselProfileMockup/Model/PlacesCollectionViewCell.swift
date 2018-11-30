@@ -30,7 +30,7 @@ class PlacesCollectionViewCell: UICollectionViewCell, UITableViewDataSource, UIT
         loadPlaces()
         
         // Keeps the aspect ratio of city background image when screen size varies (tested on iPhone 5s, iPhone 8 and iPhone 8Plus)
-        placesTableView.rowHeight = UITableViewAutomaticDimension
+        placesTableView.rowHeight = UITableView.automaticDimension
         placesTableView.estimatedRowHeight = 142
         
         // Updates the profile section with the places loaded by loadPlaces()
@@ -75,7 +75,7 @@ class PlacesCollectionViewCell: UICollectionViewCell, UITableViewDataSource, UIT
             withIdentifier: "PlaceTableViewCell",
             for: indexPath)  as UITableViewCell
         
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         guard let placeCell = cell as? PlaceTableViewCell else {
             return cell
